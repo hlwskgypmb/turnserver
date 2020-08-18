@@ -5,7 +5,7 @@ turnserver服务
 * 1.安装docker <br>
 * 2.拉取镜像 docker pull registry.cn-hongkong.aliyuncs.com/hl/turnserver <br>
 * 3.运行 <br>
-turn.sh
+
 ```
   docker run \
   -it \
