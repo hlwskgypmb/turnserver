@@ -3,7 +3,7 @@ turnserver服务
 
 使用方法
 * 1.安装docker <br>
-* 2.拉取镜像 docker pull registry.cn-hongkong.aliyuncs.com/hl/turnserver:1.0 <br>
+* 2.拉取镜像 docker pull registry.cn-hongkong.aliyuncs.com/hl/turnserver <br>
 * 3.运行 <br>
 
 ```
@@ -13,7 +13,7 @@ turnserver服务
   --net=host \
   --restart=always \
   -v /home:/turn \
-  -d registry.cn-hongkong.aliyuncs.com/hl/turnserver:1.0 1.2.3.4:3478 /turn/turnserver.conf
+  -d registry.cn-hongkong.aliyuncs.com/hl/turnserver 1.2.3.4:3478 /turn/turnserver.conf
 ```
 
 https://docs.wildfirechat.cn/webrtc/turn_server.html <br>
