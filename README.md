@@ -9,7 +9,7 @@ turnserver服务
 ```
   docker run \
   -it \
-  --name turn
+  --name turn \
   --net=host \
   --restart=always \
   -v /home:/turn \
