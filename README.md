@@ -13,7 +13,7 @@ turnserver服务
   --net=host \
   --restart=always \
   -v /home:/turn \
-  -d registry.cn-hongkong.aliyuncs.com/hl/turnserver 1.2.3.4:3478 /turn/turnserver.conf
+  -d registry.cn-hongkong.aliyuncs.com/hl/turnserver ${公网IP}:3478 /turn/turnserver.conf
 ```
 
 -v /home:/turn 挂载home目录,配置文件地址为/home/turnserver.conf。可更改其它目录-> -v /xxx/xxx:/turn   /xxx/xxx/turnserver.conf
