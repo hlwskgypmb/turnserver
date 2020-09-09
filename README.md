@@ -16,6 +16,19 @@ turnserver服务
   -d registry.cn-hongkong.aliyuncs.com/hl/turnserver 1.2.3.4:3478 /turn/turnserver.conf
 ```
 
+-v /home:/turn 挂载home目录,配置文件地址为/home/turnserver.conf。可更改其它目录-> -v /xxx/xxx:/turn   /xxx/xxx/turnserver.conf
+
+turnserver.conf配置
+```
+listening-ip=${内网IP}
+relay-ip=${内网IP}
+external-ip=${外网IP}
+
+user=username:password
+
+min-port=49152
+max-port=65535
+```
+
+相关资料
 https://docs.wildfirechat.cn/webrtc/turn_server.html <br>
-turnserver -v -r ${公网IP}:3478 -a -o -c /usr/local/etc/turnserver.conf <br>
--v /home:/turn 挂载turnserver.conf配置目录
